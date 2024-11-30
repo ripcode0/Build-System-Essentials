@@ -1,0 +1,8 @@
+BasedOnStyle: Google
+IndentWidth: 4
+NamespaceIndentation: All
+AccessModifierOffset: -4
+AlignAfterOpenBracket: AlwaysBreak
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: None
+IndentPPDirectives : None

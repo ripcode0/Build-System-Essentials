@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "msvc_x64_debug",
+            "type": "shell",
+            "command": "\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/Build/vcvarsall.bat\" x64 && build.cmd && cl",
+            "args": [
+                "/EHsc",
+                "/Zi",              //debug infomations
+                "${workspaceFolder}/srcs/*.cpp",
+                "${workspaceFolder}/srcs/engine/*.cpp",
+                "/Fe${workspaceFolder}/bin/game.exe",
+                "/Fo${workspaceFolder}/bin/obj/",
+                "/Fd${workspaceFolder}/bin/vc140.pdb",
+                "/Isrcs",
+                "/link",
+                "user32.lib",
+                "kernel32.lib",
+                "gdi32.lib"
+            ],
+            "problemMatcher": [ "$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

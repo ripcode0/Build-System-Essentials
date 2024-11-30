@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "name": "Launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "console": "externalTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "request": "launch",
+            "preLaunchTask": "C/C++: clang++.exe build active file"
+        }
+    ]
+}

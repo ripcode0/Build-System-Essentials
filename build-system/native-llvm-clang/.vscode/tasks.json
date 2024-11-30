@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "llvm-clang-x64_debug",
+            "type": "shell",
+            "command": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-g",
+                "${workspaceFolder}/src/*.cpp",
+                "-o",
+                "${workspaceFolder}/bin/game.exe",
+                "-fcolor-diagnostics",
+                "-v",
+                "-I./src"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "llvm clang++ debug"
+        }
+        
+    ]
+}

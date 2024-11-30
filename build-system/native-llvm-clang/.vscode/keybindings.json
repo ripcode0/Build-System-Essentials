@@ -1,0 +1,10 @@
+{
+    "key":"ctrl+m",
+    "command":"editor.action.codeAction",
+    "args":
+    {
+        "kind": "quickfix",
+        "preferred": true
+    },
+    "when" : "editorHasCodeAction && editorTextFocus"
+}

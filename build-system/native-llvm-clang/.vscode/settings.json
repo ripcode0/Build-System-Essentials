@@ -1,0 +1,16 @@
+{
+    //clang format
+    //"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    
+    //"C_Cpp.clang_format_style": "file",
+
+
+    //clangd
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ]
+    
+}
