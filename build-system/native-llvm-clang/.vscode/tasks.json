@@ -13,7 +13,7 @@
                 "-o",
                 "${workspaceFolder}/bin/game.exe",
                 "-fcolor-diagnostics",
-                "-v",
+                //"-v",
                 "-I./src"
             ],
             "group": {
