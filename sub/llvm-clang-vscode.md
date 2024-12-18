@@ -21,8 +21,11 @@
 3. If the version information is displayed, the installation is successful.
 
 #### 3. Set Up VSCode with CMake Tools (Optional)
-1. Install the CMake Tools extension from the VSCode marketplace.
-2. Open the command palette with Ctrl + Shift + P.
-3. Select CMake: Select a Kit.
-4. If LLVM-Clang appears in the list of kits, the setup is complete.
-🎉 You are now ready to use LLVM Clang with VSCode!
+1. Install the `CMake Tools` extension from the `VSCode` marketplace.
+2. Open the command palette with `Ctrl + Shift + P`.
+3. Select `CMake: Select a Kit`.
+4. If `LLVM-Clang` appears in the list of kits, the setup is complete.
+
+#### 4. Install Ninja for Build System Support (Optional)
+1. Download the latest Ninja build from [Ninja Releases](https://github.com/ninja-build/ninja/releases).
+2. `ninja.exe` and place the contents into the `C:\Program Files\LLVM\bin` directory where `LLVM` is installed.
