@@ -4,7 +4,7 @@
         {
             "label": "llvm-clang-x64_debug",
             "type": "shell",
-            "command": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
+            "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\"",
             "args": [
                 "-std=c++17",
                 "-Wall",
