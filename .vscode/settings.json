@@ -1,0 +1,13 @@
+{
+    //Adjust the settings to match the installed VS version
+    //Professional|Community|Enterpise
+   "terminal.integrated.profiles.windows": {
+    "develop-vs2022-cmd" : {
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "args": [
+            "/k",
+            "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\Tools\\VsDevCmd.bat"
+        ]
+    }
+    }
+}
