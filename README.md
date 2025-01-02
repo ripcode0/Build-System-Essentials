@@ -7,7 +7,7 @@
 ---
 * ### compile the code
     * #### [command line compile]()
+    * #### [compilers options](sub/compilers_options.md)
 ---
-### - [compilers options](sub/compilers_options.md)
-
-* ### git command
+* ### git process
+    * #### [fetch fork branch](sub/git/git_fetch_fork_branch.md) | [:black_circle:한국어](sub/git/git_fetch_fork_branch-kor.md)
