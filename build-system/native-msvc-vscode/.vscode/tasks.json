@@ -1,0 +1,74 @@
+{
+	"version": "2.0.0",
+	"windows": {
+		"options": {
+			"shell": {
+				"executable": "cmd.exe",
+				"args": [
+					"/c",
+					"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\Tools\\VsDevCmd.bat\"",
+					"&&"
+				]
+			}
+		}
+	},
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "pre-build",
+			"command" : "pre-build.cmd",
+			"group": "build"
+		},
+		{
+			"type": "cppbuild",
+			"label": "build-all-debug",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",									//generate debugging info (pdb)
+				"/EHsc",								//enable c++ exception
+				"/nologo",								//hide the compiler banners (version info ..etc)
+				"/Fe${workspaceFolder}/bin/game.exe",	
+				"/Fo${workspaceFolder}/bin/obj/",
+				"/Fd${workspaceFolder}/bin/",
+				"main.cpp",
+				"/I${workspaceFolder}",
+				"/link",								//passes subsequent option to linker
+				"/libpath:${workspaceFolder}/bin",
+				"engine.lib"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"dependsOn" :[ "pre-build", "build-engine"],
+			"detail": "compiler: cl.exe"
+		},
+		{
+			"label": "compile-engine",
+			"type": "cppbuild",
+			"command" : "cl.exe",
+			"args": [
+				"/c",     //compile only without link step
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/Fo${workspaceFolder}/bin/engine/",
+				"engine/*.cpp"
+			]
+		},
+		{
+			"label": "build-engine",
+			"type": "cppbuild",
+			"command" : "lib.exe",
+			"args": [
+				"/out:${workspaceFolder}/bin/engine.lib",
+				"${workspaceFolder}/bin/engine/*.obj"
+			],
+			"group": "build",
+			"dependsOn" :["compile-engine"]
+		}
+	]
+}
