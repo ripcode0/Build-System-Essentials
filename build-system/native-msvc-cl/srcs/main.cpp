@@ -1,5 +1,5 @@
 #include <iostream>
-#include "engine/game.h"
+#include <engine/game.h>
 
 int main(int args, char* argv[])
 {

@@ -9,7 +9,7 @@
             "command": "\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/Build/vcvarsall.bat\" x64 && build.cmd && cl",
             "args": [
                 "/EHsc",
-                "/Zi",              //debug infomations
+                "/Zi",
                 "${workspaceFolder}/srcs/*.cpp",
                 "${workspaceFolder}/srcs/engine/*.cpp",
                 "/Fe${workspaceFolder}/bin/game.exe",
@@ -21,7 +21,22 @@
                 "kernel32.lib",
                 "gdi32.lib"
             ],
-            "problemMatcher": [ "$msCompile"],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build-lib",
+            "type": "shell",
+            "command": "\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/Build/vcvarsall.bat\" x64 && build.cmd && lib",
+            "args": [
+                "/out:bin/game.lib",
+                "${workspaceFolder}/bin/obj/*.obj"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
