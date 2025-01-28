@@ -6,27 +6,28 @@
 
 ---
 
-## 🔧 Compiler Settings
+## Compiler Settings
 
-- **[LLVM Clang](sub/llvm-clang-vscode.md)** | [:red_circle: Türkçe](sub/llvm-clang-vscode-tr.md)
+- **[LLVM Clang](sub/llvm-clang-vscode.md)** | [Türkçe](sub/llvm-clang-vscode-tr.md)
 - **[MSYS2 GCC]()**
 - **[MSVC CL](sub/win-msvc.md)**
 
 ---
 
-## ⚙️ Compile the Code
+## Compile the Code
 
 - **[Command Line Compilation]()**
 - **[Compiler Options](sub/compilers_options.md)**
 
 ---
 
-## 🔀 Git Process
+## `Git` Process
 
-- **[Fetch Fork Branch](sub/git/git_fetch_fork_branch.md)** | [:black_circle: 한국어](sub/git/git_fetch_fork_branch-kor.md)
+- **[Fetch Fork Branch](sub/git/git_fetch_fork_branch.md)** | [한국어](sub/git/git_fetch_fork_branch-kor.md)
 
 ---
 
-## 🛠 Build With `CMake`
+## Build With `CMake`
 
-- **[CMake Compiler Option](sub/cmake/cmake_compile_option.md)** | [:black_circle:한국어](sub/cmake/cmake_compile_option_kor.md)
+- **[CMake Compiler Option](sub/cmake/cmake_compile_option.md)** | [한국어](sub/cmake/cmake_compile_option_kor.md)
+- **[CMake Library Management](sub/cmake/library/cmake_library.md)**
