@@ -5,6 +5,7 @@
 * `git 저장소`에서 라이브러리 가져오기 `FetchContent`또는  `ExternalProject`
 
 ---
+* add_subdirectory & add_library
 ---
 ---
 * [FetchContent](cmake_fetchcontent.md)
