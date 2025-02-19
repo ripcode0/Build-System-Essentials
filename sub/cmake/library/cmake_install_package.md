@@ -4,7 +4,7 @@
 
 This guide explains how to install packages using `CMake`
 
-## 1.installing External Library Packages with `CMake`
+### 1.installing External Library Packages with `CMake`
 
 * Using find_package
 ```cmake
@@ -14,7 +14,7 @@ if(<libname>_FOUND)
 endif()
 ```
 
-## 2.Create an installable C/C++ library using `CMake`
+### 2.Create an installable C/C++ library using `CMake`
 ```
 project_root/
 ├── CMakeLists.txt
@@ -24,7 +24,7 @@ project_root/
 ├── build/
 ```
 
-## 3.Setting up in CMakeLists.txt
+### 3.Setting up in CMakeLists.txt
 ```cmake
 #if neither STATIC nor SHARED, the library will be STATIC by default
 add_library(<libname> src/library.cpp)
