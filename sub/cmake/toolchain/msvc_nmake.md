@@ -13,14 +13,14 @@ execute_process(
 )
 
 if(NOT VS_PATH)
-    message(FATAL_ERROR "❌ Visual Studio installation not found!")
+    message(FATAL_ERROR "Visual Studio installation not found!")
 endif()
 
 # vcvarsall.bat 실행 (환경 변수 설정)
 set(VCVARSALL "${VS_PATH}/VC/Auxiliary/Build/vcvarsall.bat")
 
 if(NOT EXISTS ${VCVARSALL})
-    message(FATAL_ERROR "❌ vcvarsall.bat not found at: ${VCVARSALL}")
+    message(FATAL_ERROR "vcvarsall.bat not found at: ${VCVARSALL}")
 endif()
 
 # 환경 변수 설정을 위해 vcvarsall 실행
@@ -37,7 +37,7 @@ execute_process(
 )
 
 if(NOT CL_PATH)
-    message(FATAL_ERROR "❌ cl.exe not found! Run vcvarsall.bat manually.")
+    message(FATAL_ERROR "cl.exe not found! Run vcvarsall.bat manually.")
 endif()
 
 # cl.exe 및 nmake.exe 경로 설정
