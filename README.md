@@ -8,9 +8,9 @@
 
 ## Compiler Settings
 
-- **[LLVM Clang](sub/llvm-clang-vscode.md)** | [Türkçe](sub/llvm-clang-vscode-tr.md)
-- **[MSYS2 GCC]()**
-- **[MSVC CL](sub/win-msvc.md)**
+- **[LLVM Clang - Windows](sub/llvm-clang-vscode.md)** | [Türkçe](sub/llvm-clang-vscode-tr.md)
+- **[MSYS2 GCC - Windows]()**
+- **[MSVC CL - windows](sub/win-msvc.md)**
 
 ---
 

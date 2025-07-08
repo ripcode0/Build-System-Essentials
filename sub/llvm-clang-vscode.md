@@ -2,30 +2,48 @@
 
 <img src="image/llvm.png" alt="LLVM Clang" width="200">
 
-## Windows
+## [ Windows ]
 
 #### 1. Install LLVM
-1. Visit the official [LLVM releases page](https://releases.llvm.org/).
-2. Select the latest release version of LLVM.
-3. Download the Windows Installer (e.g., `LLVM-XX.X.X-win64.exe`).
-4. During installation:
+* Visit the official [LLVM releases page](https://releases.llvm.org/).
+* Select the latest release version of `LLVM`.
+* Download the Windows Installer (e.g., `LLVM-XX.X.X-win64.exe`).
+* During installation:
    - Make sure check the option to add `LLVM` to the system `PATH`
    - Use the default installation path `C:\Program Files\LLVM\`.
 
 #### 2. Verify Installation
-1. Open the Command Prompt (`cmd`).
-2. Run the following command to check if `clang++` is accessible:
+* Open the Command Prompt (`cmd`).
+* Run the following command to check if `clang++` is accessible:
    ```bash
    clang++ --version
    ```
-3. If version info appears, LLVM is installed correctly
+* If version info appears, `LLVM` is installed correctly
 
 #### 3. Set Up VSCode with CMake Tools (Optional)
-1. Install the `CMake Tools` extension from the `VSCode` marketplace.
-2. Open the command palette with `Ctrl + Shift + P`.
-3. Select `CMake: Select a Kit`.
-4. If `LLVM-Clang` appears in the list of kits, the setup is complete.
+* Install the `CMake Tools` extension from the `VSCode` marketplace.
+* Open the command palette with `Ctrl + Shift + P`.
+* Select `CMake: Select a Kit`.
+* If `LLVM-Clang` appears in the list of kits, the setup is complete.
 
 #### 4. Install Ninja Build System (Optional)
-1. Download the latest Ninja build : [Ninja Releases](https://github.com/ninja-build/ninja/releases). or Run the Installer : [Ninja Installer](https://github.com/ripcode0/Build-System-Essentials/raw/refs/heads/main/data/ninja-v1.12.1-installer.zip)
-2. `ninja.exe` and place the contents into the `C:\Program Files\LLVM\bin` directory where `LLVM` is installed.
+##### (Several ways to install Ninja)
+* Download the official latest `Ninja` : [Ninja Releases](https://github.com/ninja-build/ninja/releases)
+   * `ninja.exe` and place the contents into the `PATH` environment variables directory
+   * recommandation `PATH` environment variables 
+   `C:\Program Files (x86)\Ninja`
+   `C:\Program Files\LLVM\bin` 
+* Python
+   * The environment variable is set to 
+   `C:\Users\<username>\AppData\Local\Programs\Python\Python313\Scripts`
+   ```cmd
+   python -m pip install ninja
+   ```
+
+* Installer : [Ninja-v1.12.1-Installer](https://github.com/ripcode0/Build-System-Essentials/raw/refs/heads/main/data/ninja-v1.12.1-installer.zip)
+   * It is automatically installed to `C:\Program Files (x86)\Ninja` and the environment variable is registered.
+* Verify Installation
+   ```cmd
+   ninja --version
+   where ninja
+   ```
