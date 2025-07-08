@@ -9,7 +9,7 @@
 ## Compiler Settings
 
 - **[LLVM Clang - Windows](sub/llvm-clang-vscode.md)** | [Türkçe](sub/llvm-clang-vscode-tr.md)
-- **[MSYS2 GCC - Windows]()**
+- **[MSYS2 GCC - Windows](sub/mingw-ucrt-vscode.md)**
 - **[MSVC CL - windows](sub/win-msvc.md)**
 
 ---
