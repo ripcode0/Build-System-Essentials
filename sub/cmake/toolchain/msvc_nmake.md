@@ -3,6 +3,7 @@
 * msvc-namke-toolchain.cmake
 
 ```cmake
+
 set(VSWHERE "C:/Program Files (x86)/Microsoft Visual Studio/Installer/vswhere.exe")
 
 # vswhere로 최신 Visual Studio 경로 찾기
@@ -63,7 +64,6 @@ set(CMAKE_NMAKE_COMPILER ${CL_PATH}) # NMake용 컴파일러 명시적 지정
 message(STATUS "✔ Using cl.exe: ${CL_PATH}")
 message(STATUS "✔ Using nmake.exe: ${CMAKE_MAKE_PROGRAM}")
 message(STATUS "✔ MSVC environment initialized using ${VCVARSALL}")
-
 ```
 
 * CMakePresets.json
