@@ -27,5 +27,5 @@
 4. If `LLVM-Clang` appears in the list of kits, the setup is complete.
 
 #### 4. Install Ninja Build System (Optional)
-1. Download the latest Ninja build : [Ninja Releases](https://github.com/ninja-build/ninja/releases). or Run the Installer : [Ninja Installer](../data/ninja-v1.12.1-installer.exe)
+1. Download the latest Ninja build : [Ninja Releases](https://github.com/ninja-build/ninja/releases). or Run the Installer : [Ninja Installer](../data/ninja-v1.12.1-installer.zip)
 2. `ninja.exe` and place the contents into the `C:\Program Files\LLVM\bin` directory where `LLVM` is installed.
