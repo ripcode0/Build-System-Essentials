@@ -6,16 +6,26 @@
 
 #### 1. Install MSYS2
 * Downloading Official installer [msys2-x86_64-installer.exe](https://github.com/msys2/msys2-installer/releases/download/2025-06-22/msys2-x86_64-20250622.exe)
-* Select the latest release version of `LLVM`.
-* Download the Windows Installer (e.g., `LLVM-XX.X.X-win64.exe`).
 * During installation:
-   - Make sure check the option to add `LLVM` to the system `PATH`
-   - Use the default installation path `C:\Program Files\LLVM\`.
+   - Use the default installation path `C:\msys64`.
+   - in Finished section check the "Run MSYS2 now."
+* MSYS2 turminal is ready
+```bash
+$ pacman -S mingw-w64-ucrt-x86_64-gcc
+```
 
-#### 2. Verify Installation
-* Open the Command Prompt (`cmd`).
-* Run the following command to check if `clang++` is accessible:
+#### 2. Add the Environment Variables
+* Press `Win + R` to open the Run dialog.
+* Type the following command with double quotes and press Enter:
    ```bash
-   clang++ --version
+   SystemPropertiesAdvanced.exe
    ```
-* If version info appears, `LLVM` is installed correctly
+* This will directly open the Advanced tab of the System Properties window, where you can click the `Environment Variables...` button.
+
+    - Add `Path` `C:\msys64\ucrt64\bin`
+* Verify Installation
+    ```cmd
+    where gcc
+    gcc --version
+    ```
+[Back To Main](../README.md)

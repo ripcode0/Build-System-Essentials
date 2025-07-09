@@ -12,6 +12,12 @@
 - **[MSYS2 GCC - Windows](sub/mingw-ucrt-vscode.md)**
 - **[MSVC CL - windows](sub/win-msvc.md)**
 
+--- 
+## Getting Start
+- **[hello world with Clang On CLI]()**
+---
+## Trouble Shooting
+- **[Running an Executable on a System Without MinGW Installed](sub/problems/system-without-mingw.md)**
 ---
 
 ## Compile the Code

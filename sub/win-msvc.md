@@ -41,8 +41,5 @@ cl.exe          //to get version
 2. Open the command palette with `Ctrl + Shift + P`.
 3. Choose a kit that includes the MSVC toolset (e.g., Visual Studio ...).
 4. If the kit is detected, your setup is complete.
----
-#### 4. Using the `NMAKE` 
 
----
-* [__declspec](msvc/declspec.md)
+[Back To Main](../README.md)

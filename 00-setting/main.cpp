@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#include "game/game.h"
 
 #if defined(__clang__)
 #define _name "__clang__"
@@ -11,6 +12,6 @@ int main(int args, char *argv[]) {
 
   uintptr_t v = 100;
 
-  printf("i like %s\n", _name);
+  printf("i like %s and game name : %s\n", _name, game::get_name());
   return 0;
 }
