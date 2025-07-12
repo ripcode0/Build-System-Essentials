@@ -20,9 +20,9 @@
 - **[Running an Executable on a System Without MinGW Installed](sub/problems/system-without-mingw.md)**
 ---
 
-## Compile the Code
+## Build System
 
-- **[Command Line Compilation]()**
+- **[Bazel]()**
 - **[Compiler Options](sub/compilers_options.md)**
 
 ---

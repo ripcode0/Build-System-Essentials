@@ -34,3 +34,7 @@
 [Bb]in/
 [Bb]uild/
 
+# Bazel
+bazel-*
+
+
