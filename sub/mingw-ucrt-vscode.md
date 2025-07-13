@@ -28,4 +28,5 @@ $ pacman -S mingw-w64-ucrt-x86_64-gcc
     where gcc
     gcc --version
     ```
+    
 [Back To Main](../README.md)
