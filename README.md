@@ -14,6 +14,7 @@
 
 --- 
 ## Getting Start
+- **[CMake Kits](sub/getting_start/cmake-kits.md)**
 - **[hello world with Clang On CLI]()**
 ---
 ## Trouble Shooting
@@ -47,3 +48,6 @@
 ## Compile Options
 
 - **[GCC/Clang](sub/compile-options/gcc-clang/compile-options.md)**
+
+
+

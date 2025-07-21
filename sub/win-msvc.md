@@ -10,6 +10,17 @@
 2. Select the latest release version of visual studio.
 3. Download the installer (e.g., `VisualStudioSetup.exe`).
 ---
+#### Use The **Kits** On VSCode
+* the finding visuall studio development command prompt
+```cmd
+where /R "C:\Program Files\Microsoft Visual Studio" VsDevCmd.bat
+```
+* apear the `VsDevCmd.bat` path
+```
+C:\Program Files\Microsoft Visual Studio\...\Common7\Tools\VsDevCmd.bat
+```
+
+---
 #### 2. Verify Installation
 1. in the vscode ctrl + shift + p open the pallete
 2. choose the c/c++ `Open the Workspace setting`

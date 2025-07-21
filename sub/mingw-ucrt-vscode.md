@@ -11,7 +11,8 @@
    - in Finished section check the "Run MSYS2 now."
 * MSYS2 turminal is ready
 ```bash
-$ pacman -S mingw-w64-ucrt-x86_64-gcc
+pacman -S mingw-w64-ucrt-x86_64-gcc
+pacman -S mingw-w64-ucrt-x86_64-gdb
 ```
 
 #### 2. Add the Environment Variables
