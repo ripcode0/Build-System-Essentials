@@ -105,3 +105,5 @@ where /R "C:\Program Files\Microsoft Visual Studio" vcvars64.bat
 - `environmentSetupScript` is a script that initializes Visual Studio's environment variables.
 - You must restart VSCode and reselect the Kit after configuring this to apply changes.
 
+[Back](../../README.md)
+

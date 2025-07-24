@@ -15,6 +15,7 @@
 --- 
 ## Getting Start
 - **[CMake Kits](sub/getting_start/cmake-kits.md)**
+- **[CMake Variants](sub/getting_start/cmake-variants-kor.md)**
 - **[hello world with Clang On CLI]()**
 ---
 ## Trouble Shooting
